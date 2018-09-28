@@ -1,6 +1,6 @@
 page('/', index);
 page('/products', products);
-// page('/product/:produtctId', product);
+page('/product/:produtctId', product);
 
 page();
 
@@ -15,11 +15,11 @@ async function products() {
   $("#btnProducts").html("<a href='/'><h2> Home </h2></a>");
 }
 
-// async function product(context) {
-//   const mercadoLivreProduct = await getProduct(context.params.productId);
-//   $("main").html(renderProducts(mercadoLivreProduct));
-//   $("#btnProducts").html("<a href='/'>Home</a>");
-//  }
+async function product(context) {
+  const mercadoLivreProduct = await getProduct(context.params.productId);
+  $("main").html(renderProductsItem(mercadoLivreProduct));
+  $("#btnProducts").html("<a href='/'>Home</a>");
+ }
 
 let produtos = [];
 
@@ -43,14 +43,14 @@ function getProducts() {
   });
 }
 
-// function getProduct(id) {
-//   return fetch(`https://api.mercadolibre.com/items/${id}?
-//     access_token=APP_USR-2203506221789612-092014-4da1823b26643e8947e11e50342db4aa-315570596`)
-//     .then((response) => response.json())
-//     .then((json) => json);
-//  }
+function getProduct(id) {
+  return fetch(`https://api.mercadolibre.com/items/${id}?
+    access_token=APP_USR-2203506221789612-092014-4da1823b26643e8947e11e50342db4aa-315570596`)
+    .then((response) => response.json())
+    .then((json) => json);
+ }
 
-// function getProducts() {
+// function getProduct() {
 //   const url = `https://api.mercadolibre.com/items/${id}`
 
 //   $.ajax({
