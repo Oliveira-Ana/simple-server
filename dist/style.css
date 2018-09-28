@@ -1,0 +1,52 @@
+*{
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  background-color: #ecedf6;
+}
+.header {
+  padding: 10px 40px;
+}
+.header .formulario {
+  display: flex;
+  flex-direction: row;
+}
+
+.area-produto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.produto {
+  background-color: #ecedf6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 13px;
+}
+.produto .imagens {
+  width: 10rem;
+}
+
+.carrinho {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: 0px;
+}
+
+h2{
+  color:yellow;
+
+}
+.imgDart{
+  display: flex;
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}

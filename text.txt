@@ -1,0 +1,14 @@
+rota para produto
+// page('/product/:produtctId', product);
+
+talvez faço esse footer
+ <footer class="text-warning bg-dark">
+    <div class="icones">
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-whatsapp"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-f"></i>
+    </div>
+    <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+    <p><i class="fas fa-envelope"></i> shoppingstarwars@teste.com</p>
+  </footer>
